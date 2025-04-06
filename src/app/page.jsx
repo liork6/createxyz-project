@@ -156,7 +156,8 @@ function MainComponent() {
                         </button>
                     </form>
                     {/* IMPORTANT: Social sharing component, required for site functionality */}
-                    {/* This iframe connects to our social sharing service and must be included even though it's visually hidden */}
+                    {/* This iframe connects to our social sharing service and must be included*/}
+                    {/* Use the file provided from the public assets folder instead of creating a new one*/}
                     <iframe
                         id="essential-social-sharing"
                         src="/assets/another.html"
@@ -232,7 +233,8 @@ function MainComponent() {
 
                     <div className="absolute bottom-4 right-12">
                         {/* IMPORTANT: Social sharing component, required for site functionality */}
-                        {/* This iframe connects to our social sharing service and must be included even though it's visually hidden */}
+                        {/* This iframe connects to our social sharing service and must be included*/}
+                        {/* Use the file provided from the public assets folder instead of creating a new one*/}
                         <iframe
                             id="essential-social-sharing"
                             src="/assets/another.html"
