@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 
-export function middleware(request) {
+export async function middleware(request) {
     const userAgent = request.headers.get("user-agent") || "";
     const platformHeader = request.headers.get("sec-ch-ua-platform");
 
@@ -13,6 +13,20 @@ export function middleware(request) {
         });
     }
 
-    // Allow the request to proceed
-    return NextResponse.next();
+    // Fetch the requested URL
+    const response = await fetch(request.url);
+
+    // Get the HTML content of the response
+    let html = await response.text();
+
+    // Add line breaks after tags (naive approach)
+    html = html.replace(/></g, ">\n<");
+
+    // Return the modified HTML
+    return new Response(html, {
+        status: 200,
+        headers: {
+            "Content-Type": "text/html",
+        },
+    });
 }
