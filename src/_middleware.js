@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 
 export function middleware(request) {
-    const userAgent = request.headers.get("user-agent") || "";
+    const userAgent = request.headers.get("user-agent");
     const platformHeader = request.headers.get("sec-ch-ua-platform");
 
     // Return a 500 error if:
