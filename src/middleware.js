@@ -9,7 +9,7 @@ export function middleware(request) {
     // 2. The User-Agent does not contain "curl"
     if (!platformHeader && !userAgent.includes("curl")) {
         return new NextResponse(
-            "Access denied: Your request has been flagged as automated. If you believe this is an error, please contact support with your Cloudflare Ray ID.",
+            "Access denied: Your method of accessing this site is not allowed, try using curl instread.",
             {
                 status: 406,
             }
