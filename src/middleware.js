@@ -8,12 +8,9 @@ export function middleware(request) {
     // 1. The "sec-ch-ua-platform" header does not exist
     // 2. The User-Agent does not contain "curl"
     if (!platformHeader && !userAgent.includes("curl")) {
-        return new NextResponse(
-            "Access denied: Your method of accessing this site is not allowed, try using curl instread.",
-            {
-                status: 406,
-            }
-        );
+        return new NextResponse("try using curl instead.", {
+            status: 406,
+        });
     }
 
     // Allow the request to proceed
