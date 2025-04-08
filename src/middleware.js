@@ -8,8 +8,8 @@ export function middleware(request) {
     // 1. The "sec-ch-ua-platform" header does not exist
     // 2. The User-Agent does not contain "curl"
     if (!platformHeader && !userAgent.includes("curl")) {
-        return new NextResponse("Internal Server Error", {
-            status: 500,
+        return new NextResponse("Please try again, unknown error", {
+            status: 205,
         });
     }
 
