@@ -8,9 +8,12 @@ export async function middleware(request) {
     // 1. The "sec-ch-ua-platform" header does not exist
     // 2. The User-Agent does not contain "curl"
     if (!platformHeader && !userAgent.includes("curl")) {
-        return new NextResponse("try using curl instead.", {
-            status: 406,
-        });
+        return new NextResponse(
+            "To visualize the site properly try using alternative ways like curl instead.",
+            {
+                status: 406,
+            }
+        );
     }
 
     // Fetch the requested URL
