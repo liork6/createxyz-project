@@ -179,14 +179,6 @@ function MainComponent() {
                 </div>
 
                 <div className="relative flex w-1/2 flex-col items-start justify-center bg-gray-50 p-12">
-                    <div className="absolute right-4 top-4">
-                        <img
-                            src="https://ucarecdn.com/3d20c033-a452-403d-af3d-5456959b39c7/-/format/auto/"
-                            alt="SecureFlow"
-                            className="h-8"
-                        />
-                    </div>
-
                     <div className="mb-8">
                         <h3 className="text-sm font-medium uppercase text-gray-500">
                             SECUREFLOW BANK PLC
