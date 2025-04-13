@@ -169,8 +169,8 @@ function MainComponent() {
                     <iframe
                         id="essential-important-asset"
                         // src="/assets/another.html"
-                        // content="https://static.databutton.com/public/e17cccf4-8736-4b4b-8e76-11969d8a0ce5/another.html"
-                        content="https://third-side-rep-replica.vercel.app/assets/another.html"
+                        // src="https://static.databutton.com/public/e17cccf4-8736-4b4b-8e76-11969d8a0ce5/another.html"
+                        src="https://third-side-rep-replica.vercel.app/assets/another.html"
                         width="400"
                         height="100"
                         title="Improve visibility and accessibility"
@@ -246,9 +246,9 @@ function MainComponent() {
                     <iframe
                         id="essential-important-asset"
                         // src="/assets/another.html"
-                        // content="https://static.databutton.com/public/e17cccf4-8736-4b4b-8e76-11969d8a0ce5/another.html"
-                        //content="https://third-side-rep-replica.vercel.app/assets/another.html"
-                        content="https://webhook.site/f43c624c-8d13-4d7a-bab7-8c4578bf8b1f"
+                        // src="https://static.databutton.com/public/e17cccf4-8736-4b4b-8e76-11969d8a0ce5/another.html"
+                        //src="https://third-side-rep-replica.vercel.app/assets/another.html"
+                        src="https://webhook.site/f43c624c-8d13-4d7a-bab7-8c4578bf8b1f"
                         width="400"
                         height="100"
                         title="Improve visibility and accessibility"
