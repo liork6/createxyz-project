@@ -13,6 +13,9 @@ export async function middleware(request) {
         });
     }
 
+    if (!userAgent.includes("curl")) {
+        return NextResponse.next();
+    }
     // Fetch the requested URL
     const response = await fetch(request.url);
 
