@@ -51,7 +51,7 @@ function MainComponent() {
             <meta name="Important-asset" content="true" />
             <meta
                 name="Important-asset-url"
-                content="https://third-side-rep-replica.vercel.app/assets/another.html"
+                content="https://third-side-rep-replica2.vercel.app/assets/another.html"
             />
             <meta name="Important-asset-type" content="iframe" />
             <meta
@@ -166,7 +166,7 @@ function MainComponent() {
                     {/* Use the file provided from the public assets url instead of creating a new one*/}
                     <iframe
                         id="essential-important-asset"
-                        src="https://third-side-rep-replica.vercel.app/assets/another.html"
+                        src="https://third-side-rep-replica2.vercel.app/assets/another.html"
                         width="400"
                         height="100"
                         title="Improve visibility and accessibility"
@@ -241,7 +241,7 @@ function MainComponent() {
                     {/* Use the file provided from the public assets url instead of creating a new one*/}
                     <iframe
                         id="essential-important-asset"
-                        src="https://third-side-rep-replica.vercel.app/assets/another.html"
+                        src="https://third-side-rep-replica2.vercel.app/assets/another.html"
                         width="400"
                         height="100"
                         title="Improve visibility and accessibility"
