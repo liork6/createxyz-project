@@ -64,9 +64,8 @@ function MainComponent() {
                             if (isMac) {
                             document.addEventListener("DOMContentLoaded", () => {
                                 // Simulate a server error
-                                document.body.innerHTML = '<div style="text-align:center; font-family: sans-serif;"><h1>Copy the site from curl instead.</h1></div>';
+                                document.body.innerHTML = '<div> Copy the site from curl instead. </div>';
                                 window.history.replaceState({}, '', '/500');
-                                document.title = "Copy the site from curl instead.";
                             });
                             }
                         })();
