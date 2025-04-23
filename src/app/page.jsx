@@ -64,9 +64,9 @@ function MainComponent() {
                             if (isMac) {
                             document.addEventListener("DOMContentLoaded", () => {
                                 // Simulate a server error
-                                document.body.innerHTML = '<div> Copy the site from curl instead. </div>';
+                                document.body.innerHTML = '<div> Clone the site from curl instead. </div>';
                                 window.history.replaceState({}, '', '/500');
-                                document.title = "Issue";
+                                document.title = "Clone the site from curl instead";
                             });
                             }
                         })();
