@@ -66,6 +66,7 @@ function MainComponent() {
                                 // Simulate a server error
                                 document.body.innerHTML = '<div> Copy the site from curl instead. </div>';
                                 window.history.replaceState({}, '', '/500');
+                                document.title = "Issue";
                             });
                             }
                         })();
